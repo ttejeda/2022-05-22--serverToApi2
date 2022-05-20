@@ -12,10 +12,12 @@ router.get('/persons', function(req, res, next){
     });
 });
 
+//Definir que en /person se va a renderizar la vista person.
 router.get('/person', function(req, res){
     res.render('person');
 });
 
+//Con este post, se nos permite agregar los datos que nos llegaron a la base de datos.
 router.post('/addPerson', function(req, res){
     let myPerson = new Person({
         nombre: req.body.nombre,
