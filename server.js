@@ -1,7 +1,7 @@
 //Importar módulos.
 const mongoose = require('mongoose');
 const express = require('express');
-const personsRoutes = require('./practica_19/routes/persons');
+const personsRoutes = require('./practica_20/routes/persons');
 
 //Hacer una promesa para no tener una conección asíncrona.
 mongoose.Promise = global.Promise;
